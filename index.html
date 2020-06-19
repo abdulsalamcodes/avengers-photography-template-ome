@@ -5,12 +5,13 @@
         <meta charset="utf-8">
         <meta
         name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap local css -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.css">
-
+        
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- Bootstrap local css -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
         
         <!-- Custom css -->
         <link rel="stylesheet" href="./assets/css/main.css">
@@ -32,11 +33,14 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <!-- BRAND NAME -->
             <a class="navbar-brand" href="#">[iCAPTURE]</a>
+            <!-- TOGGLER -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- NAV LINKS -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mobile-nav-wrapper">
                     <ul class="navbar-nav">
@@ -55,7 +59,7 @@
                             <a class="nav-link" href="#">CONTACT</a>
                         </li>
                     </ul>
-    
+                    <!-- ICONS -->
                     <div class="icon">
                         <span class="fa-icon">
                             <span class="iconify" data-icon="simple-line-icons:social-pinterest" data-inline="false"></span>
@@ -103,37 +107,54 @@
         </header>
 
         <main class="container">
+            <!-- IMAGE CAROUSEL -->
             <section >
-                <h2 class="heading-2 showcase_heading">Latest Shots</h2>
-                <p class="para-1">Check out some of our latest photoshoot
-                    collections.</p>
-                <div class="container">
+                <!-- HEADING -->
+                    <h2 class="heading-2 showcase_heading">Latest Shots</h2>
+                    <p class="para-1">Check out some of our latest photoshoot
+                        collections.</p>
 
+                <div class="container">
                     <div class="image_showcase text-center ">
-                        <h1 class="heading-1">1/10</h1>
+                        <!-- CAROUSEL -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <!-- INDICATORS -->
                             <ol class="carousel-indicators">
                               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
+
                             <div class="carousel-inner">
+                                <!-- IMAGE ONE -->
                               <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/image1.png" class="img-fluid" alt="First slide">
+                                <h1 class="heading-2 carousel-caption">1/10</h1>
+                                <a href="assets/images/image1.png">
+                                    <img class="d-block w-100" src="assets/images/image1.png" class="img-fluid" alt="Image One">
+                                </a>
                               </div>
+                              <!-- IMAGE TWO -->
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/image2.jpg" class="img-fluid"  alt="First slide">
+                                <h1 class="heading-2 carousel-caption">2/10</h1>
+                                <a href="assets/images/image2.jpg">
+                                    <img class="d-block w-100" src="assets/images/image2.jpg" class="img-fluid"  alt="Image two">
+                                </a>
                               </div>
+                              <!-- IMAGE THREE -->
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/image3.jpg" class="img-fluid" alt="First slide">
+                                <h1 class="heading-2 carousel-caption">3/10</h1>
+                                <a href="assets/images/image3.jpg">
+                                    <img class="d-block w-100" src="assets/images/image3.jpg" class="img-fluid" alt="Image Three">
+                                </a>
                               </div>
                             </div>
-                           
                         </div>  
                     </div>
+
+                    <!-- CAROUSEL CONTROLS -->
                     <div class="container mt-2">
                         <div class="row ">
-                            <a class="col btn btn-square disabled mr-1" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="col btn btn-square  bg-secondary mr-1" href="#carouselExampleIndicators" role="button" data-slide="prev">
                               <span  aria-hidden="true">PREVIOUS</span>
                               <span class="sr-only">Previous</span>
                             </a>
@@ -146,50 +167,65 @@
                 </div>
             </section>
 
-
+            <!-- REVIEWS -->
             <section class="my-5">
                 <h2 class="heading-2 showcase_heading">Customer's Review</h2>
                 <p class="para-1">See what some of our customers have to say about their experience with us.</p>
                 <div class="container">
-
+                    <!-- FIRST REVIEWER -->
                     <div class="row mb-3 review">
-                        <blockquote class="col text-center align-self-center">
+                        <!-- PS: text-local-primary applies a color of dark blue to a text. -->
+                        <blockquote class="col text-center text-local-primary font-weight-bold align-self-center">
+                            <img src="./assets/images/quote-begin.png" class="img-fluid " alt="">
                             Lorem ipsum, dolor sit amet consectetur adipisicing.
+                            <img src="./assets/images/quote-end.png" class="img-fluid " alt="">
+                            <footer class="reviewer">
+                                EVA S.
+                            </footer>
                         </blockquote>
                         <div class="col yellow-bg "></div>
                     </div>
+                    <!-- SECOND REVIEWER -->
                     <div class="row review">
                         <div class="col yellow-bg"></div>
-                        <blockquote class="col text-center align-self-center">
-                            ipsum dolor sit amet consectetur adipisicing.
+                        <blockquote class="col text-center text-local-primary font-weight-bold  align-self-center">
+                            <img src="./assets/images/quote-begin.png" class="img-fluid " alt="">
+                             ipsum, dolor sit amet consectetur aconetestant.
+                            <img src="./assets/images/quote-end.png" class="img-fluid " alt="">
+                            <footer class="reviewer">MARY C.</footer>
                         </blockquote>
                     </div>
                 </div>
             </section>
 
+            <!-- FEATURED STORIES -->
             <section class="my-5">
+                <!-- HEADING -->
                 <h2 class="heading-2 showcase_heading">Featured Stories</h2>
                 <p class="para-1">Here, you will find the stories behind the
                     trending shoots from our studio.</p>
 
                 <div class="container text-primary">
                     <div class="row mb-3 story-card">
+                        <!--STORY ONE -->
                         <div class="col p-0">
                             <img src="./assets/images/person1.png" class="img-thumbnail" alt="">
                         </div>
-                        <div class="col align-self-center">
+                        <div class="col ">
+                            <time datetime="2020-11-20"><small> 20 Nov, 2020</small></time> 
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur .
                             </p>
                             <a href="#">see more &raquo;</a>
                         </div>
-
                     </div>
+                    <!-- STORY TWO -->
                     <div class="row story-card">
                         <div class="col p-0">
                             <img src="./assets/images/person2.png" class="img-thumbnail" alt="">
                         </div>
                         <div class="col align-self-center">
+                            <time datetime="2020-09-18"><small>18 Sep, 2020</small></time>
                             <p>
                                 ipsum dolor sit amet consectetur lorem.
                             </p>
@@ -201,10 +237,11 @@
     
         </main>
 
-
+        <!-- FOOTER SECTION -->
         <footer class="footer py-5">
             <div class="container">
-                <div class="row">   
+                <div class="row">  
+                     <!-- CALL TO ACTOIN -->
                     <div class="col-lg-4 cta">
                         <a class="footer-brand " class="col-" href="#">[iCAPTURE]</a>
     
@@ -218,7 +255,7 @@
                         <p>Always find out about our exclusive deals,
                             latest shot and top trend</p>
                     </div>
-    
+                    <!-- USEFUL LINKS -->
                     <div class="col-lg-4 my-5 recent-shots">
                         <h2 class="heading-2">
                             Recent Shots
@@ -230,7 +267,7 @@
                         <a href="#" class="d-block">Nulla Vitae eit libero elit non</a>
                     </div>
                 </div>
-    
+                <!-- ADDRESS -->
                 <address class="pb-5">
                     <h2 class="heading-2">Reach Out</h2>
                     <p>Hng Street, Opp Slack Avenue <span class="d-block"> Nigeria</span></p>
